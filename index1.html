@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torres de Hanói</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Torres de Hanói</h1>
+        <div class="controls">
+            <button onclick="startGame(3)">Nível Fácil (3 Discos)</button>
+            <button onclick="startGame(4)">Nível Médio (4 Discos)</button>
+            <button onclick="startGame(5)">Nível Difícil (5 Discos)</button>
+        </div>
+        <div class="towers">
+            <div class="tower" id="tower1" onclick="selectTower(1)"></div>
+            <div class="tower" id="tower2" onclick="selectTower(2)"></div>
+            <div class="tower" id="tower3" onclick="selectTower(3)"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
